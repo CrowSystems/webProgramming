@@ -9,19 +9,39 @@
         let jugador = 0
         let pc = 2
         jugador = prompt("Elige: 1 para poedra, 2 para papel, 3 para tijera")
-        //alert("Elejiste " + jugardor)
+        //Elección de usuario
         if(jugador == 1){
-            alert("Elejiste piedra");
+            alert("Elejiste 🪨");
         } else if(jugador == 2) {
-            alert("Elejiste papel")
+            alert("Elejiste 📰")
         } else if(jugador == 3) {
-            alert("Elejiste Tijera")
+            alert("Elejiste ✂️")
         } else {
             alert("Elejiste PERDER")
+        }
+
+        //Elección de PC
+        if(pc == 1) {
+            alert("PC elige 🪨")
+        } else if(pc == 2) {
+            alert("PC elige 🗒️")
+        } else if(pc ==3) {
+            alert("PC elige ✂️")
+        }
+
+        //Comporación de elecciones
+        if(pc == jugador){
+            alert("EMPATE")
+        }else if(jugador == 1 && pc == 3){
+            alert("GANASTE")
+        } else if(jugador == 2 && pc == 1){
+            alert("GANASTE")
+        } else if(jugador == 3 && pc == 2){
+            alert("PERDISTE")
         }
     </script>
 </head>
 <body>
-    
+     
 </body>
 </html>
